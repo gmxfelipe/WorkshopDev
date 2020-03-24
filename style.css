@@ -175,8 +175,13 @@ footer a{
 
 }
 
+.content form div:nth-child(3){
+    grid-column: span 2;
+}
 
-form input, form textarea{
+
+form input,
+form textarea{
     width: 100%;
 
     padding: 12px;
@@ -197,6 +202,35 @@ form label{
     letter-spacing: 0.8px;
 }
 
+form a{
+    width: 150px;
+    height: 40px;
+
+    background-color: #ffffff22;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-size: 14px;
+    font-weight: bold;
+    
+    border-radius: 6px;
+    justify-self: end;
+
+    transition: 500ms;
+
+}
+
+form a:hover{
+    background: #fff;
+    color: #ff5e84;
+
+    text-decoration: none;
+}
+
 form button{
     background: white;
     width: 150px;
@@ -207,6 +241,8 @@ form button{
     cursor: pointer;
 
     margin-top: 32px;
+    transition: 500ms;
+    
 
 }
 
@@ -218,6 +254,10 @@ form button:hover{
     text-decoration: none;
 }
 
+#modal.hide{
+    opacity: 0;
+    visibility: hidden;
+}
 
 
 

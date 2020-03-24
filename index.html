@@ -9,7 +9,7 @@
 
 
 </head>
-<body>
+<body class="vsc-initialized">
 
 <div id="container">
     <section id="intro">
@@ -34,7 +34,7 @@
             </p>
         </main>
         <section id="buttons">
-            <button>+ Adicionar Ideia</button>
+            <button onclick="onOff()">+ Adicionar Ideia</button>
             <button class="fat">Ver Ideias</button>
         </section>
        
@@ -86,7 +86,7 @@
 
     <!-- Start Modal -->
 
-    <div id="modal">
+    <div id="modal" class="hide">
         <div class="content">
             <h1>Nova Ideia</h1>
 
@@ -117,6 +117,8 @@
                     <label for="link">Link da Ideia</label>
                     <input type="url" name="link">
                 
+
+                    <a href=""  onclick="onOff()">Voltar</a>
                     <button>Salvar</button>
 
                 </div>
