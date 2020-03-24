@@ -132,5 +132,99 @@ footer a{
 
 
     
+/* Start Modal */
+
+#modal{
+    background: #ff5e84;
+    position: absolute;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#modal.content{
+    margin-top: 128px;
+
+    color: white;
+}
+
+#modal .content h1{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#modal form{
+    width: 80%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+
+
+}
+
+
+form input, form textarea{
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.5);
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+form label{
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+form button{
+    background: white;
+    width: 150px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    margin-top: 32px;
+
+}
+
+
+form button:hover{
+    background-color: #0984e3;
+    color: white;
+
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* End Modal */
 
     
