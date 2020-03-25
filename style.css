@@ -259,12 +259,58 @@ form button:hover{
     visibility: hidden;
 }
 
-
-
-
-
-
-
 /* End Modal */
+
+
+/* Start Ideias.html */
+
+#page-ideas #container{
+    display: block;
+}
+
+#page-ideas header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideas nav{
+    display: flex;
+
+    align-items: center;
+}
+
+#page-ideas nav li{
+    list-style-type: none;
+
+    margin-right: 16px;
+}
+
+#page-ideas nav li:last-child{
+    margin: 0;
+}
+
+#page-ideas nav li:last-child a{
+    width: 150px;
+    height: 40px;
+
+    background-color: #ff5e84;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+#page-ideas nav li:last-child a:hover{
+    background-color: #0984e3;
+
+}
+
+/* End Ideias.html */
 
     
