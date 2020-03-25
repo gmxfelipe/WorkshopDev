@@ -5,6 +5,10 @@ body{
     margin: 0;
 }
 
+body.hideScroll{
+    overflow: hidden;
+}
+
 .hide{
     display: none;
 }
@@ -35,7 +39,7 @@ p, .description{
 
 #intro{
     width: 300px;
-    margin-right: 20px;
+    margin-right: 64px;
 }
 
 main{
@@ -66,11 +70,11 @@ button:hover{
     text-decoration: underline;
 }
 
-button.fat:hover{
+.fat:hover{
     text-decoration: none;
 }
 
-button.fat{
+.fat{
     color:white;
     background: #ff5e84;
 
@@ -133,132 +137,126 @@ footer a{
 
     
 /* Start Modal */
-
 #modal{
-    background: #ff5e84;
+    background-color: #ff5E84;
     position: absolute;
     top: 0;
-
+  
     width: 100vw;
     height: 100vh;
-
+  
     display: flex;
-
-    align-items: center;
     justify-content: center;
-}
-
-#modal.content{
+    transition: 400ms;
+  }
+  
+  #content{
     margin-top: 128px;
-
-    color: white;
-}
-
-#modal .content h1{
+    color:white;
+  }
+  
+  #content h1{
     text-align: center;
     text-transform: uppercase;
-
-}
-
-#modal form{
+  }
+  
+  #modal form{
     width: 80%;
-    max-width: 800px;
-
+    max-width:800px;
+  
     margin: 0 auto;
-
+  
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
+  
     gap: 20px;
-
-
-}
-
-.content form div:nth-child(3){
+  
+  }
+  
+  form div:nth-child(3),
+  form div:nth-child(4),
+  form div:nth-child(5){
     grid-column: span 2;
-}
-
-
-form input,
-form textarea{
+  }
+  
+  form input, form textarea{
     width: 100%;
-
+  
     padding: 12px;
-
+  
     box-sizing: border-box;
-
+  
     border-radius: 6px;
-    border: 1px solid rgba(141, 25, 52, 0.5);
-
+  
+    border: 1px solid rgba(141, 25, 52,0.5);
+  
     outline: none;
-
+  
     font-size: 16px;
-}
-
-form label{
+  
+  }
+  
+  form label{
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.8px;
-}
-
-form a{
+  }
+  
+  
+  form a{
+  
     width: 150px;
     height: 40px;
-
+  
     background-color: #ffffff22;
-    color: white;
-
+    color:white;
+  
     display: flex;
     align-items: center;
     justify-content: center;
-
-
+  
     font-size: 14px;
     font-weight: bold;
-    
+  
     border-radius: 6px;
-    justify-self: end;
-
-    transition: 500ms;
-
-}
-
-form a:hover{
-    background: #fff;
-    color: #ff5e84;
-
-    text-decoration: none;
-}
-
-form button{
-    background: white;
+  
+    align-self: end;
+  
+    transition: 400ms;
+  }
+  
+  form button{
+    background-color: white;
     width: 150px;
     height: 40px;
-
     border-radius: 6px;
-
     cursor: pointer;
-
+  
     margin-top: 32px;
-    transition: 500ms;
-    
-
-}
-
-
-form button:hover{
-    background-color: #0984e3;
+  
+    grid-column: 2;
+    justify-self: end;
+    transition: 400ms;
+  }
+  
+  form button:hover{
+    background-color: turquoise;
     color: white;
-
+  
     text-decoration: none;
-}
-
-#modal.hide{
-    opacity: 0;
+  }
+  
+  form a:hover{
+    background-color: #ff5E84
+    color: white;
+  
+    text-decoration: none;
+  }
+  
+  body #modal.hide {
+    opacity:0;
     visibility: hidden;
-}
-
+  }
 /* End Modal */
 
 
@@ -285,6 +283,10 @@ form button:hover{
     margin-right: 16px;
 }
 
+#page-ideas nav li a{
+    color: #25282B;
+}
+
 #page-ideas nav li:last-child{
     margin: 0;
 }
@@ -308,7 +310,40 @@ form button:hover{
 
 #page-ideas nav li:last-child a:hover{
     background-color: #0984e3;
+    text-decoration: none;
 
+}
+
+section#title{
+    text-align: center;
+}
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+section#title h1{
+    margin: 0;
+
+    font-size: 28px;
+}
+
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+section#ideas .ideas{
+    margin: 0;
+}
+
+section#title,
+section#ideas,
+footer{
+    margin-top: 64px;
 }
 
 /* End Ideias.html */
