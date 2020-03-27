@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideias - casa criativa</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"> 
+
+</head>
+<body id="page-ideas">
+
+    <div id="container">
+        <header>
+            <a href="/">
+            <img src="/logo.png" alt="imagem da logo marca">
+        </a>
+            <nav>
+                <li><a href="/">Início</a></li>
+                <li><a href="#" onclick="onOff()">Nova Ideia</a></li>
+            </nav>
+        </header>
+        <section id="title">
+            <p>Em exibição</p>
+            <h1>Ideias</h1>
+        </section>
+        <main>
+            <section id="ideas">
+
+        <!-- Start ideas -->
+
+        {% include "all_ideas.html" %}
+        
+        <!-- End ideas -->
+
+        </section>
+        </main>
+        <footer>
+            Com ❤ <a href="https://felipeagomes.github.io/" target="_blank">Felipe Augusto</a>
+        </footer>
+    </div>
+
+ <!-- Start Modal -->
+
+ {% include "modal.html" %}
+
+<!-- End Modal -->
+
+
+<script src="/scripts.js"></script> 
+
+</body>
+</html>
