@@ -1,3 +1,27 @@
+#buttons a{
+    width: 150px;
+    height: 40px;
+
+    background-color: #ff5e84;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+}
+
+#buttons a:hover{
+    background-color: #0984e3;
+    text-decoration: none;
+}
+
+
+
 body{
     background: #e5e5e5;
     color: #25282B;
@@ -229,6 +253,8 @@ footer a{
   
     transition: 400ms;
   }
+
+
   
   form button{
     background-color: white;
@@ -245,7 +271,7 @@ footer a{
   }
   
   form button:hover{
-    background-color: turquoise;
+    background-color: #0984e3;
     color: white;
   
     text-decoration: none;
