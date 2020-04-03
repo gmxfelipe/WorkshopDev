@@ -28,7 +28,7 @@
 
 
 <p> 
-O casa criativa foi um projeto desenvolvido para organizar ideias durante esse período de quarentena, visando mantermos sempre ocupados e adquirindo conhecimento.</P> 
+A casa-criativa foi um projeto desenvolvido para organizar ideias durante esse período de quarentena, visando mantermos sempre ocupados e adquirindo conhecimento.</P> 
 <P> As tecnologias usadas para o desenvolvimento desse projeto foram:</p>
 
  - <a href="https://nodejs.org/en/">Node.JS</a>
