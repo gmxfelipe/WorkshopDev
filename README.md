@@ -1,6 +1,6 @@
 
 <p align="center"> <img src="https://uploaddeimagens.com.br/images/002/567/949/original/logo.png?1585928891"></p>
-<h2><p align="center"><h2> WorkShopDev </h2></p>
+
 
 
  <strong><h3>Tela inicial</h3></strong>
